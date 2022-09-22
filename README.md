@@ -1,8 +1,9 @@
 # CDP (CD point)
 
-CDP is a command line tool to easily cd up to the nearest 'point'. 
-There are two preset points. `/` and `~`. You can set other points
-by creating a .cdp file in any directory. 
+CDP is a command line tool that allows you to easily set checkpoints
+as you traverse down a branch in a directory tree. There are two preset 
+checkpoints: `/` and `~`. You can set other points by creating 
+a .cdp file in any directory. 
 
 Example: 
 
@@ -17,7 +18,8 @@ pwd # ~/foo/bar
 ```
 
 ## Installation 
-Add to .bashrc
-```
-alias cdp="source ~/path/to/cdp/cdp.sh"
-```
+### bash
+cat cdp.sh >> ~/.bashrc
+
+### zsh
+cp cdp.sh $ZSH_CUSTOM/cdp.zsh
